@@ -1,0 +1,6 @@
+
+services:
+    switch_base_currency.command.switch_base_currency:
+        class: Nivas\Bundle\SwitchBaseCurrencyBundle\Command\SwitchBaseCurrencyCommand
+        tags:
+            - { name: console.command }
