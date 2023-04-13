@@ -22,12 +22,12 @@ composer require nivas/sylius-switch-base-currency-bundle
 Do a dry run:
 
 ```
-bin/console app:switch-base-currency --dry-run
+bin/console nivas:switch-base-currency --dry-run
 ```
 Do a real run:
 
 ```
-bin/console app:switch-base-currency
+bin/console nivas:switch-base-currency
 ```
 
 
@@ -82,7 +82,7 @@ This bundle is provided and intended for use in good faith, the liability for an
 ## Example output
 
 ```
-$ bin/console app:switch-base-currency
+$ bin/console nivas:switch-base-currency
 Source channel: sooosuper (default)
 Source channel currency: HRK
 Destination currency: EUR
