@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Nivas\Bundle\SwitchBaseCurrencyBundle;
@@ -17,8 +18,7 @@ final class SwitchBaseCurrencyBundle extends Bundle
     // {
     //     parent::boot();
     //     echo "SwitchBaseCurrencyBundle booted!" . PHP_EOL;
-    // }    
-
+    // }
 
     /**
      * This method returns an instance of the bundle's extension class (SwitchBaseCurrencyExtension),
@@ -27,7 +27,6 @@ final class SwitchBaseCurrencyBundle extends Bundle
      *
      * @return SwitchBaseCurrencyExtension The bundle's extension instance
      */
-
     public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
@@ -35,6 +34,5 @@ final class SwitchBaseCurrencyBundle extends Bundle
         }
 
         return $this->extension;
-    }    
+    }
 }
-
