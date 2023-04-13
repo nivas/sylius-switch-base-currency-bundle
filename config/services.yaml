@@ -1,6 +1,14 @@
-
 services:
-    switch_base_currency.command.switch_base_currency:
+    switch_base_currency_bundle.command.switch_base_currency:
         class: Nivas\Bundle\SwitchBaseCurrencyBundle\Command\SwitchBaseCurrencyCommand
+        arguments:
+            - '@doctrine.orm.default_entity_manager'
+            - '@sylius.repository.channel'
+            - '@sylius.repository.currency'
+            - '@sylius.repository.exchange_rate'
+            - '@sylius.repository.channel_pricing'
+            - '@sylius.repository.shipping_method'
+            - '@sylius.repository.order'
+            - '@sylius.money_formatter'
         tags:
             - { name: console.command }
